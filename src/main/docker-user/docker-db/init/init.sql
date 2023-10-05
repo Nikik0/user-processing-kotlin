@@ -32,7 +32,7 @@ create table professor(
     role varchar(20),
     subject varchar(20)
 );
-create table professor(
+create table student(
     id serial primary key,
     name varchar(30),
     surname varchar(30),

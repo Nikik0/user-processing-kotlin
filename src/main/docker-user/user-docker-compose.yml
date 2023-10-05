@@ -61,7 +61,7 @@ services:
 
   pgadmin:
     hostname: users_admin_console
-    container_name: pgadmin_container
+    container_name: users_pgadmin_container
     image: dpage/pgadmin4:7.2
     depends_on:
       - users_postgres_db
