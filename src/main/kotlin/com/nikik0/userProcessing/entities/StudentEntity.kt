@@ -10,6 +10,7 @@ data class StudentEntity(
     val id: Long,
     val name: String,
     val surname: String,
+    @Column("info")
     val additionalInfo: String,
     val age: Int,
     val role: UserRole,
