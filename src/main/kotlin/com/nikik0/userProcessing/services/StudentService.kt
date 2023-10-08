@@ -11,7 +11,7 @@ class StudentService(
     private val studentRepository: StudentRepository
 ) {
     suspend fun create(studentEntity: StudentEntity, auth: String) =
-        if (externalSecurityService.callToCheckCred(auth, listOf("professor", "mentor", "admin")))
+        if (externalSecurityService.callToCheckCred(auth, listOf("student","professor", "mentor", "admin")))
             studentRepository.save(studentEntity)
         else null
 
@@ -31,7 +31,7 @@ class StudentService(
         else null
 
     suspend fun update(studentEntity: StudentEntity, auth: String) =
-        if (externalSecurityService.callToCheckCred(auth, listOf("mentor", "admin")))
+        if (externalSecurityService.callToCheckCred(auth, listOf("professor", "mentor", "admin")))
             studentRepository.save(studentEntity)
         else null
 }
