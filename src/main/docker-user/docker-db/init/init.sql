@@ -40,5 +40,6 @@ create table student(
     age bigint,
     role varchar(20),
     course bigint,
-    group_id bigint
+    group_id bigint,
+    rating bigint
 );

@@ -16,5 +16,6 @@ data class StudentEntity(
     val role: UserRole,
     val course: Int,
     @Column("group_id")
-    val groupId: Long
+    val groupId: Long,
+    val rating: Long
 )
